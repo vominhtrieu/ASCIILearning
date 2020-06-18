@@ -10,12 +10,10 @@ html, body {
     line-height: 200px;
     text-align: center;
     color: white;
+    text-align: center;
+    margin: 30px auto;
     background-color: rgb(136, 136, 245);
     user-select: none;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
     border-radius: 25px;
     cursor: pointer;
 }
@@ -29,15 +27,19 @@ html, body {
 }
 
 .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
     display: flex;
     flex-direction: row;
     width: 90vw;
     flex-wrap: wrap;
-    position: absolute;
     justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
 }
 
 button {
@@ -60,20 +62,13 @@ button:hover {
 }
 
 #result {
-    position: absolute;
     font-size: 32px;    
     text-align: center;
     font-weight: bold;
     background-color: blue;
     color: white;
-    cursor: pointer;
     border-radius: 25px;
-    padding: 20px;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#result>span{
-    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    user-select: none;
 }
